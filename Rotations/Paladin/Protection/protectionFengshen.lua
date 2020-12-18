@@ -319,7 +319,7 @@ local function runRotation()
 				end
 			end
 		end
-		if inInstance or inRaid then
+		if inInstance and inRaid then
 			-- Auto cancel Blessing of Protection
 			if isChecked("Auto cancel BoP") then
 				if buff.blessingOfProtection.exists() and cast.able.handOfReckoning() then
